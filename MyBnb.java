@@ -1,11 +1,7 @@
 /**
-   Date: September 23, 2023
-   Course: CSCI 2073 - 11:00AM Section MW
    Description: A class whic uses and manages an ArrayList of RentalRoom objects.
                This class has a constructor, int method numberOfRooms(int beds),
                String method chooseRoom(int minBeds), int method numberOfStaffNeeded().
-   On my honor, I have neither given nor received unauthorized help while completing this assignment.
-   George Khawas and 30157203.
 */
 
 import java.io.*;
