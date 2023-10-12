@@ -10,6 +10,7 @@ import java.util.*;
 public class MyBnb{
 
     private List<RentalRoom> roomsList = new ArrayList<>();
+    private boolean fileStat = true;
 
    /**
       Constructor to initialize the file name from which data is loaded.
@@ -32,6 +33,7 @@ public class MyBnb{
          sc.close();
       } catch(FileNotFoundException e){
          System.out.println(e);
+         fileStat = false;
       }
    }
    
@@ -96,6 +98,14 @@ public class MyBnb{
       }
       
       return numberOfStaffs;
+    }
+
+/**
+   A method to get if the file has encountered FileNotFoundException or not.
+   @return true if exception does not exist false if it does
+*/
+   public boolean getFileStat(){
+      return fileStat;
     }
 
 }
